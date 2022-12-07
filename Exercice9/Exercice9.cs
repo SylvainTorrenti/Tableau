@@ -15,7 +15,7 @@ for (int Indice = Tableau.Length; Indice > 0; Indice--)
     }
 }
 
-for (int i = 0; i < Tableau.Length; i++)
+for (int i = 0; i < Tableau.Length; i++)//on affiche les resultats
 {
     Console.Write(Tableau[i] + " ");
 }
