@@ -8,8 +8,8 @@ for (int i = 0; i < Tableau.Length - 1; i++)
         Temp = Tableau[i + 1];
         Tableau[i + 1] = Tableau[i];
         Tableau[i] = Temp;
-        
+        i = 0;
 
     }
-    Console.WriteLine(Tableau[i]);
+        Console.WriteLine(Tableau[i]);
 }
