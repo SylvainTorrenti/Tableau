@@ -1,7 +1,7 @@
 ﻿int[] Tableau = { 46, 10, 1, 50, 8, 12, 15, 33 };
 int Temp;
 
-//Verifie si le nombre est plus grand
+
 for (int Indice = Tableau.Length; Indice > 0; Indice--)
 {
     for (int i = 0; i < Indice - 1; i++)
