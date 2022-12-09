@@ -2,7 +2,7 @@
 int NbNom;
 string Nom;
 int NomIndex;
-Random Rnd = new Random();
+int NbNomHasard;
 Console.WriteLine("Combien de nom voulez vous entrez? (Max 12)");
 NbNom = int.Parse(Console.ReadLine());
 string[] TabNom = new string[NbNom];
@@ -28,12 +28,17 @@ for (int i = 0; i < TabNom.Length; i++)
     }
     TabNom[i] = Nom;
 }
-NomIndex = Rnd.Next(TabNom.Length);
+Console.WriteLine("Combien de nom voulez vous tirer au hasard? (Max le nombre de nom entré)");
+NbNomHasard = int.Parse(Console.ReadLine());
+for (int i = 0; i < NbNomHasard; i++)
+{
+    Random Rnd = new Random();
+    NomIndex = Rnd.Next(TabNom.Length);
+    Console.WriteLine("le nom tiré au hasard est " + TabNom[NomIndex]);
 
-Console.WriteLine("le nom tiré au hasard est " + TabNom[NomIndex]);
+}
 
-//for (int i = 0; i < TabNom.Length; i++)
-//{
-//    Console.Write(TabNom[i] + " ");
-//}
-
+for (int i = 0; i < TabNom.Length; i++)
+{
+    Console.Write(TabNom[i] + " ");
+}
